@@ -8,7 +8,8 @@ Make sure Python 3 is installed.
 Generate your Swift client models with [swagger-codegen](www.github.com/swagger-api/swagger-codegen) then run:
 
     $ pip install virtualenv
-	$ virtualenv -p /usr/local/bin/python3 alamoswagger
+    $ virtualenv ve -p /usr/local/bin/python3 --prompt="(alamoswagger)"
+    $ . ve/bin/activate
     $ pip install -r requirements.txt
     $ python alamoswagger.py input_dir output_dir   # Note: if output_dir exists nothing will happen
 
